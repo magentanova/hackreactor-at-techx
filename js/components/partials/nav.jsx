@@ -7,7 +7,7 @@ const Nav = props =>
 		<nav className="has-text-centered navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<a className="navbar-item" href="#home">
-					<img src="./images/hack-reactor-logo.png" />
+					<img src="./public/images/hack-reactor-logo.png" />
 				</a>
 			</div>
 			<div className="navbar-menu is-active">
