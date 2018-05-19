@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {handleLogout} from '../../utils.js'
 
 const Nav = props =>
 	(
@@ -29,7 +28,7 @@ const Nav = props =>
 					</div>
 				</div>
 				<div className="navbar-item">
-					<a className="main-nav__item-anchor">Syllabus</a>
+					<Link to="syllabus" className="main-nav__item-anchor">Syllabus</Link>
 				</div>
 				<div className="navbar-item">
 					<a className="main-nav__item-anchor">Follow-up</a>

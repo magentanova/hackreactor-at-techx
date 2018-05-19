@@ -1,3 +1,6 @@
+$hrBlue: #0090d9;
+$hrTeal: rgb(0, 179, 152);
+
 /*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
 .clear:after {
 	display: block;
@@ -44160,25 +44163,54 @@ tbody.collapse.in {
 		}
 	}
 
-	.notebooks-page {
+	.content-section {
+		flex-basis: 100%;
+		-webkit-flex-basis: 100%;
+	}
+
+	.page {
 		padding-left: 8rem;
 		padding-right: 8rem;
+	}
 
-		.enterprise__cta-section .content-section {
-			flex-basis: 100%;
-			-webkit-flex-basis: 100%;
-		}
-			ul {
-				li {
-					a {
-						color: #222;
-					}
-					h2 {
-						display: block;
-						font-size: 1.5em;
-						font-weight: bold;
-					}
+	.notebooks-page {
+		ul {
+			li {
+				a {
+					color: #222;
+				}
+				h2 {
+					display: block;
+					font-size: 1.5em;
+					font-weight: bold;
 				}
 			}
+		}
+	}
+
+	.page.syllabus-page {
+		padding-left: 4rem;
+		padding-right: 4rem;
+
+		.syllabus-section {
+			article {
+				background: $hrBlue;
+			}
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #ddd;
+			.tile.is-parent {
+				padding-left: 0;
+			}
+		}
+		.syllabus-subsection {
+			padding-right: 0;
+			article {
+				background: $hrTeal;
+				a {
+					margin-right: 1rem;
+				}
+			}
+		}
 	}
 }

@@ -9,17 +9,17 @@ const wrap = (component) => props => <Wrapper page={component} {...props} />
 class Wrapper extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = store.getState()
+		// this.state = store.getState()
 	}
 
 	componentWillMount() {
-		this.unsubscribe = store.subscribe(() => {
-			this.setState(store.getState())
-		})
+		// this.unsubscribe = store.subscribe(() => {
+		// 	this.setState(store.getState())
+		// })
 	}
 
 	componentWillUnmount() {
-		this.unsubscribe()
+		// this.unsubscribe()
 	}
 
 	 render() {

@@ -31,7 +31,7 @@ const notebookItems = [
 ]
 
 const NotebooksPage = props => (
-	<div className="notebooks-page container__content">
+	<div className="page notebooks-page container__content">
 		<div className="enterprise__cta-section">
 			<section className="content-section content-section--hug">
 				<header className="content-section__header">

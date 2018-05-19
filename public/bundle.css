@@ -33818,15 +33818,32 @@ tbody.collapse.in {
     z-index: 1; }
     #app-container nav .navbar-item.has-dropdown {
       padding: .5rem 1rem; }
-  #app-container .notebooks-page {
+  #app-container .content-section {
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%; }
+  #app-container .page {
     padding-left: 8rem;
     padding-right: 8rem; }
-    #app-container .notebooks-page .enterprise__cta-section .content-section {
-      flex-basis: 100%;
-      -webkit-flex-basis: 100%; }
-    #app-container .notebooks-page ul li a {
-      color: #222; }
-    #app-container .notebooks-page ul li h2 {
-      display: block;
-      font-size: 1.5em;
-      font-weight: bold; }
+  #app-container .notebooks-page ul li a {
+    color: #222; }
+  #app-container .notebooks-page ul li h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold; }
+  #app-container .page.syllabus-page {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+    #app-container .page.syllabus-page .syllabus-section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd; }
+      #app-container .page.syllabus-page .syllabus-section article {
+        background: #0090d9; }
+      #app-container .page.syllabus-page .syllabus-section .tile.is-parent {
+        padding-left: 0; }
+    #app-container .page.syllabus-page .syllabus-subsection {
+      padding-right: 0; }
+      #app-container .page.syllabus-page .syllabus-subsection article {
+        background: #00b398; }
+        #app-container .page.syllabus-page .syllabus-subsection article a {
+          margin-right: 1rem; }
