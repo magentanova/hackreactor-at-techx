@@ -1,5 +1,6 @@
 $hrBlue: #0090d9;
 $hrTeal: rgb(0, 179, 152);
+$hrOrange: #de7c01;
 
 /*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
 .clear:after {
@@ -44194,7 +44195,7 @@ tbody.collapse.in {
 
 		.syllabus-section {
 			article {
-				background: $hrBlue;
+				background: $hrOrange;
 			}
 			padding-top: 1rem;
 			padding-bottom: 1rem;

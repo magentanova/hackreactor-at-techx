@@ -70,7 +70,7 @@ const syllabusData = [
 			},			
 			{
 				title: 'Convolutional Neural Networks',
-				description: 'This type of network is specialized for performing object recognition in images. By repeating the same feature detectors, with the same weights, at different parts of a layer, Convultional Neural Nets (CNNs) become robust against object translation. That means that if an object changes location within a pixel map, it will still be recognized.',
+				description: 'This type of network is specialized for performing object recognition in images. By repeating the same feature detectors, with the same weights, at different parts of a layer, Convolutional Neural Nets (CNNs) become robust against object translation. That means that if an object changes location within a pixel map, it will still be recognized.',
 				resourceType: 'Notebook',
 				resource: null,
 				slides: ''

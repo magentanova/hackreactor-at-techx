@@ -1,8 +1,8 @@
 {
-  "name": "vision",
+  "name": "Hack Reactor @ TechX",
   "version": "1.0.0",
-  "description": "the front-end for the vision report automation tool",
-  "main": "index.js",
+  "description": "One-stop-shop for training materials and other resources for Hack Reactor's ML Seminar at TechX",
+  "main": "js/app.jsx",
   "scripts": {
     "build": "webpack -p --progress --config webpack.config.js",
     "dev-build": "webpack --progress -d --config webpack.config.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SamsungAdsAnalytics/vision.git"
+    "url": "git+https://github.com/magentanova/hackreactor-at-techx.git"
   },
   "author": "justin richards",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SamsungAdsAnalytics/vision/issues"
+    "url": "https://github.com/magentanova/hackreactor-at-techx/issues"
   },
-  "homepage": "https://github.com/SamsungAdsAnalytics/vision#readme",
+  "homepage": "https://github.com/magentanova/hackreactor-at-techx#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -38,11 +38,8 @@
     "caniuse-lite": "^1.0.30000833",
     "has-flag": "^3.0.0",
     "react": "^16.2.0",
-    "react-datetime-range-picker": "^1.0.4",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2",
-    "superagent": "^3.8.2",
     "sync-exec": "^0.6.2"
   },
   "babel": {
