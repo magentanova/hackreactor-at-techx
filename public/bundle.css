@@ -33824,6 +33824,17 @@ tbody.collapse.in {
   #app-container .page {
     padding-left: 8rem;
     padding-right: 8rem; }
+  #app-container .page.home-page .bios {
+    display: flex;
+    max-width: 800px; }
+  #app-container .page.home-page .bio {
+    flex: 1;
+    margin: 1rem; }
+    #app-container .page.home-page .bio .media-content {
+      overflow: hidden; }
+  #app-container .page.home-page .content-section {
+    margin: 2.5rem auto;
+    border-bottom: 1px solid #ddd; }
   #app-container .notebooks-page ul li a {
     color: #222; }
   #app-container .notebooks-page ul li h2 {

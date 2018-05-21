@@ -13,6 +13,9 @@ const Nav = props =>
 				<div className="navbar-item">
 					<Link to="home" className="main-nav__item-anchor">Home</Link>
 				</div>
+				<div className="navbar-item">
+					<Link to="syllabus" className="main-nav__item-anchor">Syllabus</Link>
+				</div>
 				<div className="navbar-item has-dropdown is-hoverable">
 					<a className="main-nav__item-anchor">Resources</a>
 					<div className="navbar-dropdown">
@@ -28,14 +31,10 @@ const Nav = props =>
 					</div>
 				</div>
 				<div className="navbar-item">
-					<Link to="syllabus" className="main-nav__item-anchor">Syllabus</Link>
-				</div>
-				<div className="navbar-item">
 					<a className="main-nav__item-anchor">Follow-up</a>
 				</div>
 			</div>
 		</nav>
-
 	)
 
 export default Nav

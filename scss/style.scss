@@ -44174,6 +44174,24 @@ tbody.collapse.in {
 		padding-right: 8rem;
 	}
 
+	.page.home-page {
+		.bios {
+			display: flex;
+			max-width: 800px;
+		}
+		.bio {
+			flex: 1;
+			margin: 1rem;
+			.media-content {
+				overflow: hidden;
+			}
+		}
+		.content-section {
+			margin: 2.5rem auto;
+			border-bottom: 1px solid #ddd;
+		}
+	}
+
 	.notebooks-page {
 		ul {
 			li {
