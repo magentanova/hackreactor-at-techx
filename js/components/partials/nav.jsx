@@ -47,6 +47,9 @@ class Nav extends Component {
                 <Link to="notebooks">Jupyter Notebooks</Link>
               </div>
               <div className="navbar-item main-nav__submenu-item">
+                <Link to="glossary">Glossary</Link>
+              </div>
+              <div className="navbar-item main-nav__submenu-item">
                 <Link to="slides">Slides</Link>
               </div>
             </div>

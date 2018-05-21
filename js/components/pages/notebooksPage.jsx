@@ -40,7 +40,8 @@ const NotebooksPage = props => (
 				<section className="corporate-solutions-wrapper corporate-solutions-wrapper--full corporate-solutions--simple-list">
 					<ul className="corporate-solutions__list">
 					{notebookItems.map(item => 
-						<NotebookLink 
+						<NotebookLink
+							key={item.title}
 							url={item.url}
 							description={item.description}
 							title={item.title} />

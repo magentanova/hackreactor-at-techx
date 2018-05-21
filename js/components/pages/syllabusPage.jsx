@@ -118,7 +118,7 @@ const SyllabusSection = props => (
 		</div>
 		<div className="tile is-vertical is-8">
 			{props.subsections.map(item => 
-				<SyllabusSubsection {...item} />
+				<SyllabusSubsection key={item.title} {...item} />
 			)}
 		</div>
 	</div>
