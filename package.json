@@ -1,5 +1,5 @@
 {
-  "name": "Hack Reactor @ TechX",
+  "name": "hack-reactor-at-techx",
   "version": "1.0.0",
   "description": "One-stop-shop for training materials and other resources for Hack Reactor's ML Seminar at TechX",
   "main": "js/app.jsx",
