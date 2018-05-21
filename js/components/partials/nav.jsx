@@ -8,7 +8,8 @@ class Nav extends Component {
     this.toggleExpand = this.toggleExpand.bind(this);
   }
 
-  toggleExpand() {
+  toggleExpand(e) {
+    e.preventDefault();
     this.setState({ expanded: !this.state.expanded });
   }
 
@@ -31,7 +32,10 @@ class Nav extends Component {
         </div>
         <div className={navbarClass}>
           <div className="navbar-item main-nav__item main-nav__item--no-arrow">
-            <Link class="main-nav__item-anchor" to="home">Home</Link>
+            <Link className="main-nav__item-anchor" to="home">Home</Link>
+          </div>
+          <div className="navbar-item main-nav__item main-nav__item--no-arrow">
+            <Link className="main-nav__item-anchor" to="syllabus">Syllabus</Link>
           </div>
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="main-nav__item-anchor">Resources</a>
@@ -46,9 +50,6 @@ class Nav extends Component {
                 <Link to="slides">Slides</Link>
               </div>
             </div>
-          </div>
-          <div className="navbar-item">
-            <Link to="syllabus" className="main-nav__item-anchor">Syllabus</Link>
           </div>
           <div className="navbar-item">
             <a className="main-nav__item-anchor">Follow-up</a>
