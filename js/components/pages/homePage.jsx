@@ -7,7 +7,7 @@ const instructorData = [
 	{
 		name: 'Justin Richards',
 		bio: 'Justin holds an MA in computational linguistics from the Graduate Center at the City University of New York, where he published several papers in natural language processing, the subdomain of machine learning that concerns the production and understanding of human language. He has spent two years teaching full-stack web development at a software development school, and he currently works as a data engineer at Samsung Research America.',
-		pic: 'public/images/jr_headshot.jpg'
+		pic: 'public/images/jr_headshot2.jpg'
 	},
 	{
 		name: 'Curtis Schlak',
