@@ -13297,7 +13297,17 @@ button.close {
   width: 100%; }
 
 .nav-toggle {
-  float: right; }
+  float: right;
+  -webkit-align-self: center;
+  -ms-align-self: center;
+  align-self: center; }
+
+.spacer {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .s-main-nav__list {
   margin: 0;
@@ -18260,7 +18270,8 @@ tbody.collapse.in {
   padding-bottom: 15px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-size: .875rem; }
+  font-size: .875rem;
+  text-align: left; }
 
 .main-nav__submenu-item a {
   white-space: nowrap;
