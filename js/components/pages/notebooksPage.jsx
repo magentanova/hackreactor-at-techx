@@ -4,20 +4,25 @@ import wrap from '../supercomponents/wrapper.jsx'
 
 const notebookItems = [
 	{
+		title: 'Intro to TensorFlow',
+		description: 'We learn the basic building blocks of TensorFlow and how to use them.',
+		url: 'https://colab.research.google.com/drive/1j0Vvc57KzMfd0C9XJKj8c_NEx0Gujfb3'
+	},
+	{
 		title: 'Perceptrons',
 		description: 'We work through the AND, OR, and NOT cases with perceptrons.',
 		url: 'https://colab.research.google.com/drive/1vFYNu1oRnzhutNuW7W-bnj36QcmvcxiA'
-	}, 
-	{
-		title: 'Speech Tagging',
-		description: 'We use perceptrons in a common real-life application: Tagging parts of speech.',
-		url: 'https://colab.research.google.com/drive/1KoKs4oMlFKsI1zGeEO5Yy1JtlzExWROh'
 	},
 	{
 		title: 'Multilayer Perceptrons',
 		description: 'Connect perceptrons to each other in layers, and you have a neural network.',
 		url: 'https://colab.research.google.com/drive/1Gr7SdjA9OOA9_L3UutIQyvPsRPRYfXLn'
-	}, 
+	},
+	{
+		title: 'Speech Tagging',
+		description: 'We use perceptrons in a common real-life application: Tagging parts of speech.',
+		url: 'https://colab.research.google.com/drive/1KoKs4oMlFKsI1zGeEO5Yy1JtlzExWROh'
+	},
 	{
 		title: 'Symbol Classification',
 		description: 'The first step toward computer vision, a key area of study in artificial intelligence.',
@@ -39,7 +44,7 @@ const NotebooksPage = props => (
 				</header>
 				<section className="corporate-solutions-wrapper corporate-solutions-wrapper--full corporate-solutions--simple-list">
 					<ul className="corporate-solutions__list">
-					{notebookItems.map(item => 
+					{notebookItems.map(item =>
 						<NotebookLink
 							key={item.title}
 							url={item.url}
@@ -62,9 +67,9 @@ const NotebookLink = props => (
 		      <h2 className="corporate-solutions__title">{props.title}</h2>
 		      <p className="corporate-solutions__description hug">{props.description}</p>
 		    </header>
-		  </article> 
+		  </article>
 		</a>
-	</li> 
+	</li>
 	)
 
 export default wrap(NotebooksPage)

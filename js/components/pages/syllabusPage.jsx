@@ -17,8 +17,8 @@ const syllabusData = [
 			{
 				title: 'Intro to TensorFlow',
 				description: 'This open-source machine learning platform is used internally at Google and at large by the ML community.',
-				resourceType: 'Tutorial',
-				resource: 'https://www.tensorflow.org/get_started/',
+				resourceType: 'Notebook',
+				resource: 'https://colab.research.google.com/drive/1j0Vvc57KzMfd0C9XJKj8c_NEx0Gujfb3',
 				slides: null
 			},
 			{
@@ -42,17 +42,17 @@ const syllabusData = [
 				slides: null
 			},
 			{
-				title: 'Multiclass Perceptrons',
-				description: 'We move beyond binary classification and see how perceptrons can be used to assign a datapoint one of many possible labels.',
-				resourceType: 'Notebook',
-				resource: 'https://colab.research.google.com/drive/1KoKs4oMlFKsI1zGeEO5Yy1JtlzExWROh#scrollTo=c6QQlWHtrtLX',
-				slides: null
-			},
-			{
 				title: 'Solving the XOR Problem',
 				description: 'We explore a use case that poses a challenge to the basic perceptron. Finding the solution will drive us to connect perceptrons and create something more sophisticated: a neural network.',
 				resourceType: 'Notebook',
 				resource: 'https://colab.research.google.com/drive/1Gr7SdjA9OOA9_L3UutIQyvPsRPRYfXLn',
+				slides: null
+			},
+			{
+				title: 'Multiclass Perceptrons with Natural Language Processing',
+				description: 'We move beyond binary classification and see how perceptrons can be used to assign a datapoint one of many possible labels.',
+				resourceType: 'Notebook',
+				resource: 'https://colab.research.google.com/drive/1KoKs4oMlFKsI1zGeEO5Yy1JtlzExWROh',
 				slides: null
 			}
 		]
