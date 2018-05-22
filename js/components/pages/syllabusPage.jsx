@@ -40,19 +40,19 @@ const syllabusData = [
 				resourceType: 'Notebook',
 				resource: 'https://colab.research.google.com/drive/1vFYNu1oRnzhutNuW7W-bnj36QcmvcxiA',
 				slides: null
-			},			
+			},
 			{
 				title: 'Multiclass Perceptrons',
 				description: 'We move beyond binary classification and see how perceptrons can be used to assign a datapoint one of many possible labels.',
 				resourceType: 'Notebook',
-				resource: null,
+				resource: 'https://colab.research.google.com/drive/1KoKs4oMlFKsI1zGeEO5Yy1JtlzExWROh#scrollTo=c6QQlWHtrtLX',
 				slides: null
-			},			
+			},
 			{
 				title: 'Solving the XOR Problem',
 				description: 'We explore a use case that poses a challenge to the basic perceptron. Finding the solution will drive us to connect perceptrons and create something more sophisticated: a neural network.',
 				resourceType: 'Notebook',
-				resource: null,
+				resource: 'https://colab.research.google.com/drive/1Gr7SdjA9OOA9_L3UutIQyvPsRPRYfXLn',
 				slides: null
 			}
 		]
@@ -67,7 +67,7 @@ const syllabusData = [
 				resourceType: 'Notebook',
 				resource: null,
 				slides: null
-			},			
+			},
 			{
 				title: 'Convolutional Neural Networks',
 				description: 'This type of network is specialized for performing object recognition in images. By repeating the same feature detectors, with the same weights, at different parts of a layer, Convolutional Neural Nets (CNNs) become robust against object translation. That means that if an object changes location within a pixel map, it will still be recognized.',
@@ -117,7 +117,7 @@ const SyllabusSection = props => (
 		  </article>
 		</div>
 		<div className="tile is-vertical is-8">
-			{props.subsections.map(item => 
+			{props.subsections.map(item =>
 				<SyllabusSubsection key={item.title} {...item} />
 			)}
 		</div>
@@ -138,5 +138,3 @@ const SyllabusSubsection = props => (
 )
 
 export default wrap(SyllabusPage)
-
-

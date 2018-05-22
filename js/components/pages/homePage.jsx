@@ -11,8 +11,8 @@ const instructorData = [
 	},
 	{
 		name: 'Curtis Schlak',
-		bio: 'wet willy',
-		pic: 'https://i.pinimg.com/originals/ef/1d/7f/ef1d7ff1a62a13c6bd8c0c12208d90b1.jpg'
+		bio: 'Curtis\' graduate work is in information retrieval at the University of Houston for text and computer vision based systems. He has published papers on the application of fuzzy logic reasoning encoded in neural networks as well as papers on the use of Fourier transforms and wavelets for conformal cameras. He has over 20 years in software development and acts as the Lead Enterprise Learning Instructor at Hack Reactor.',
+		pic: 'public/images/curtis-headshot.jpeg'
 	}
 ]
 
@@ -43,7 +43,7 @@ class HomePage extends React.Component {
 			  </h2>
 		    </header>
 			<div className="bios">
-				  {instructorData.map(instructor => 
+				  {instructorData.map(instructor =>
 				  	<InstructorBio {...instructor} /> )}
 			</div>
 		</section>
@@ -76,5 +76,3 @@ const InstructorBio = props => (
 	)
 
 export default wrap(HomePage)
-
-
