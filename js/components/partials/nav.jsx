@@ -8,8 +8,10 @@ class Nav extends Component {
     this.toggleExpand = this.toggleExpand.bind(this);
   }
 
-  toggleExpand(e) {
-    e.preventDefault();
+  toggleExpand(e, preventDefault) {
+    if (preventDefault) {
+      e.preventDefault();
+    }
     this.setState({ expanded: !this.state.expanded });
   }
 
@@ -28,7 +30,7 @@ class Nav extends Component {
             <img src="./public/images/hack-reactor-logo.png" />
           </a>
           <div className="spacer"></div>
-          <a href="#" class={iconClass} onClick={this.toggleExpand} aria-hidden="false">Menu</a>
+          <a href="#" class={iconClass} onClick={e => this.toggleExpand(e, true)} aria-hidden="false">Menu</a>
         </div>
         <div className={navbarClass}>
           <div className="navbar-item main-nav__item main-nav__item--no-arrow">
@@ -38,8 +40,11 @@ class Nav extends Component {
             <Link className="main-nav__item-anchor" to="syllabus">Syllabus</Link>
           </div>
           <div className="navbar-item main-nav__item main-nav__item--no-arrow">
-	        <Link className="main-nav__item-anchor" to="notebooks" >Jupyter Notebooks</Link>
-	      </div>
+            <Link className="main-nav__item-anchor" to="notebooks" >Jupyter Notebooks</Link>
+  	      </div>
+          <div className="navbar-item main-nav__item main-nav__item--no-arrow">
+            <a target="_blank" onClick={this.toggleExpand} className="main-nav__item-anchor" href="/playground/index.html">NN Playground</a>
+  	      </div>
 {/*          <div className="navbar-item has-dropdown is-hoverable">
             <a className="main-nav__item-anchor">Resources</a>
             <div className="navbar-dropdown">

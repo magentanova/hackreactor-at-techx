@@ -43,10 +43,18 @@ const syllabusData = [
 			},
 			{
 				title: 'Solving the XOR Problem',
-				description: 'We explore a use case that poses a challenge to the basic perceptron. Finding the solution will drive us to connect perceptrons and create something more sophisticated: a neural network.',
-				resourceType: 'Notebook',
-				resource: 'https://colab.research.google.com/drive/1Gr7SdjA9OOA9_L3UutIQyvPsRPRYfXLn',
-				slides: null
+        description: 'We explore a use case that poses a challenge to the basic perceptron. Finding the solution will drive us to connect perceptrons and create something more sophisticated: a neural network.',
+        resources: [
+          {
+            resourceType: 'Notebook',
+            resource: 'https://colab.research.google.com/drive/1Gr7SdjA9OOA9_L3UutIQyvPsRPRYfXLn',
+          },
+          {
+            resourceType: 'Playground',
+            resource: '/playground/index.html#activation=relu&batchSize=10&dataset=xor&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=1&seed=0.81959&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false',
+          },
+        ],
+        slides: null
 			},
 			{
 				title: 'Multiclass Perceptrons with Natural Language Processing',
@@ -64,8 +72,8 @@ const syllabusData = [
 			{
 				title: 'The Backpropogation Algorithm',
 				description: 'In the previous section, we began to wire together perceptrons to create a network that could detect relationships between inputs. In this section, we learn how such a network is trained.',
-				resourceType: 'Notebook',
-				resource: null,
+				resourceType: 'Playground',
+				resource: '/playground/index.html#activation=relu&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=1&seed=0.03614&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false',
 				slides: null
 			},
 			{
@@ -130,6 +138,7 @@ const SyllabusSubsection = props => (
 	    <p className="title">{props.title}</p>
 	    <p className="subtitle">{props.description}</p>
 	    <div className="content">
+        {props.resources ? props.resources.map(r => <a href={r.resource} target="_blank">{r.resourceType}</a> ) : null}
 	    	{props.resource ? <a href={props.resource} target="_blank">{props.resourceType}</a> : null}
 	    	{props.slides ? <a href={props.slides} target="_blank">Slides</a> : null}
 	    </div>
