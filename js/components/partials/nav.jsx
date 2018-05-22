@@ -27,7 +27,7 @@ class Nav extends Component {
           <a className="navbar-item" href="#home">
             <img src="./public/images/hack-reactor-logo.png" />
           </a>
-          <div class="spacer"></div>
+          <div className="spacer"></div>
           <a href="#" class={iconClass} onClick={this.toggleExpand} aria-hidden="false">Menu</a>
         </div>
         <div className={navbarClass}>
@@ -37,13 +37,16 @@ class Nav extends Component {
           <div className="navbar-item main-nav__item main-nav__item--no-arrow">
             <Link className="main-nav__item-anchor" to="syllabus">Syllabus</Link>
           </div>
-          <div className="navbar-item has-dropdown is-hoverable">
+          <div className="navbar-item main-nav__item main-nav__item--no-arrow">
+	        <Link className="main-nav__item-anchor" to="notebooks" >Jupyter Notebooks</Link>
+	      </div>
+{/*          <div className="navbar-item has-dropdown is-hoverable">
             <a className="main-nav__item-anchor">Resources</a>
             <div className="navbar-dropdown">
               <div className="navbar-item main-nav__submenu-item">
                 <Link to="datasets">Datasets</Link>
               </div>
-              <div className="navbar-item main-nav__submenu-item">
+           <div className="navbar-item main-nav__submenu-item">
                 <Link to="notebooks">Jupyter Notebooks</Link>
               </div>
               <div className="navbar-item main-nav__submenu-item">
@@ -53,10 +56,10 @@ class Nav extends Component {
                 <Link to="slides">Slides</Link>
               </div>
             </div>
-          </div>
-          <div className="navbar-item">
-            <a className="main-nav__item-anchor">Follow-up</a>
-          </div>
+          </div>*/}
+{/*          <div className="navbar-item">
+            <a className="main-nav__item main-nav__item--no-arrow">Follow-up</a>
+          </div>*/}
         </div>
       </nav>
     );
